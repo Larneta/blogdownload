@@ -1,0 +1,54 @@
+/* Custom Variables */
+:root {
+  --main-yellow: #f4d03f;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.bg-yellow {
+  background-color: var(--main-yellow) !important;
+}
+
+/* Neo-brutalism Card Style */
+.custom-neo-card {
+  width: 327px;
+  border: 1px solid #111 !important;
+  border-radius: 20px !important;
+  /* Thick black shadow without blur */
+  box-shadow: 8px 8px 0px 0px #000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.custom-neo-card:hover {
+  box-shadow: 16px 16px 0px 0px #000;
+  transform: translate(-4px, -4px);
+}
+
+.blog-title {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.blog-title:hover {
+  color: var(--main-yellow);
+}
+
+.badge {
+  padding: 6px 12px;
+}
+
+
+@media (max-width: 576px) {
+    .custom-neo-card {
+        width: 100%;       
+        max-width: 310px;  
+        padding: 15px;     
+    }
+
+    .blog-title {
+        font-size: 1.2rem; 
+    }
+}
